@@ -65,7 +65,6 @@ ng build
 ```
 Esto compilará tu proyecto y almacenará los artefactos de compilación en el dist/ directorio. De forma predeterminada, la compilación de producción optimiza el rendimiento y la velocidad de tu aplicación.
 
-----
 Para ejecutar pruebas unitarias con el ejecutor de pruebas Karma , utilice el siguiente comando:
 ```bash
 ng test
@@ -78,24 +77,31 @@ Angular CLI no incluye un framework de pruebas integral por defecto. Puedes eleg
 
 # ⚙️ Estructura de Proyecto
 ```bash
-my-app/
-│── src/
-│   ├── app/                # Código fuente principal
-│   │   ├── components/     # Componentes reutilizables
-│   │   ├── services/       # Servicios inyectables
-│   │   ├── app.module.ts   # Módulo principal
-│   │   ├── app.component.ts# Componente raíz
-│   │   ├── app-routing.module.ts # Módulo de rutas
-│   ├── assets/             # Recursos estáticos
-│   │   ├── components/     # Componentes reutilizables
-│   │   ├── services/       # Servicios inyectables
-│   │   ├── app.module.ts   # Módulo principal
-│   │   ├── app.component.ts# Componente raíz
-│   │   ├── app-routing.module.t
-│   ├── environments/       # Configuraciones por entorno
-│── angular.json            # Configuración del proyecto
-│── package.json            # Dependencias del proyecto
-│── tsconfig.json           # Configuración de TypeScript
+Proyecto/
+│── .vscode/             # Configuración del editor VS Code
+│── node_modules/        # Dependencias de Node.js
+│── public/              # Archivos públicos (favicon, etc.)
+│   ├── favicon.ico      # Ícono del proyecto
+│── src/                 # Código fuente del proyecto
+│   ├── app/             # Código fuente principal
+│   │   ├── app.component.css     # Estilos específicos del componente raíz
+│   │   ├── app.component.html    # Plantilla HTML del componente raíz
+│   │   ├── app.component.spec.ts # Pruebas unitarias para componente raíz
+│   │   ├── app.component.ts      # Componente raíz, envuelve toda la app
+│   │   ├── app.config.ts         # Archivo de configuración global de la app
+│   │   ├── app.routes.ts         # Definición de las rutas de la aplicación
+│   ├── index.html       # Archivo HTML principal
+│   ├── main.ts          # Punto de entrada, primer archivo que se carga
+│   ├── styles.css       # Estilos globales
+│── .editorconfig        # Configuración de estilo de código
+│── .gitignore           # Archivos y carpetas a ignorar en Git
+│── angular.json         # Configuración del proyecto Angular
+│── package-lock.json    # Bloqueo de versiones de dependencias
+│── package.json         # Dependencias y scripts del proyecto
+│── README.md            # Documentación del proyecto
+│── tsconfig.app.json    # Configuración de TypeScript para la aplicación
+│── tsconfig.json        # Configuración global de TypeScript
+│── tsconfig.spec.json   # Configuración de TypeScript para pruebas
 ```
 # 🔍 Comparación con otras tecnologías
 | Característica     | Angular         | React            | Vue             |
