@@ -47,9 +47,10 @@ ng new <nombre-proyecto>
 ```bash
 cd mi-proyecto
 ```
-Para iniciar un servidor de desarrollo local, ejecute:
+Para iniciar un servidor de desarrollo local, ejecute uno:
 ```bash
 ng serve
+ng serve --open
 ```
 Para generar un nuevo componente, ejecute:
 ```bash
@@ -102,6 +103,10 @@ Proyecto/
 │── tsconfig.app.json    # Configuración de TypeScript para la aplicación
 │── tsconfig.json        # Configuración global de TypeScript
 │── tsconfig.spec.json   # Configuración de TypeScript para pruebas
+```
+Para comenzar, limpiar el proeyecto vaciando `app.component.html` y probar con algo basico:
+```bash
+<h1>Hola mundo en Angular</h1>
 ```
 # 🔍 Comparación con otras tecnologías
 | Característica     | Angular         | React            | Vue             |
