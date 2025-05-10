@@ -63,10 +63,11 @@ ng version
 
 ```bash
 ng new <nombre-proyecto>
+ng new <nombre-proyecto> --skip-tests #sin pruebas
 ```
 
 ```bash
-cd mi-proyecto
+cd <nombre-proyecto>
 ```
 
 Para iniciar un servidor de desarrollo local, ejecute uno:
